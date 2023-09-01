@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Escolha entre PESO e PESADELO</title>
+     <img src="STEPHERSON.png">
+</head>
+<body>
+    <h1>Escolha entre PESO e PESADELO</h1>
+    <form method="post" action="#">
+        <label for="escolha">Escolha:</label>
+        <input type="text" id="escolha" name="escolha">
+        <input type="submit" value="Enviar">
+    </form>
+
+    <div id="resultado">
+        <!-- Aqui é onde a mensagem será exibida -->
+    </div>
+
+    <script>
+        document.querySelector('form').addEventListener('submit', function (event) {
+            event.preventDefault();
+            const escolha = document.querySelector('#escolha').value.toLowerCase();
+            const resultado = document.querySelector('#resultado');
+
+            if (escolha === "peso") {
+                resultado.innerHTML = "<p>NÃO NÃO NÃO NÃO NÃO</p><p>Stepherson Mendonça está decepcionado...</p>";
+            } else {
+                resultado.innerHTML = "<p>Obrigado meu Deus pelos obstáculos, são necessários para a minha evolução.</p>"	
+               
+               
+            }
+        });
+    </script>
+</body>
+</html>
+
